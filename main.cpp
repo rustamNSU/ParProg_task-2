@@ -45,7 +45,6 @@ int main()
     const int N = 3000;
     omp_set_num_threads(g_number_of_threads);
 
-
     MatrixType A = create_test_matrix(N);
     VectorType solution(N, 1.0);
     VectorType rhs = matrix_product(A, solution);
@@ -53,8 +52,7 @@ int main()
     auto matrixProduct = [&A](const std::vector<double> &x){return matrix_product(A, x);};
     BICGStab<> solver(matrixProduct);
 
-
-
+    /* Solving */
     auto start = Time::now();
     VectorType result = solver.solve(rhs);
     dsec runtime = Time::now() - start;
