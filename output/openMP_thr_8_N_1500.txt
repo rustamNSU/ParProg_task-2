@@ -5,5 +5,5 @@
     BiCGStab iterations  = 134
     BiCGStab rel. error  = 2.02256e-15
     error (l2-norm)      = 3.82682e-28
-    BiCGStab time        = 1.74761 s.
+    BiCGStab time        = 0.36389 s.
 ---------------------------------------------

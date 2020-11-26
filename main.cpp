@@ -41,8 +41,8 @@ int main()
     using Time = std::chrono::high_resolution_clock;
     using dsec = std::chrono::duration<double>;
 
-    const int g_number_of_threads = 8;
-    const int N = 3000;
+    const int g_number_of_threads = 1;
+    const int N = 1500;
     omp_set_num_threads(g_number_of_threads);
 
     MatrixType A = create_test_matrix(N);
