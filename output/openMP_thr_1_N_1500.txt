@@ -1,0 +1,9 @@
+--- OpenMP in matrix product for BiCGStab ---
+    Number of threads    = 1
+    Number of processors = 8
+    Vector size          = 1500
+    BiCGStab iterations  = 134
+    BiCGStab rel. error  = 2.02256e-15
+    error (l2-norm)      = 3.82682e-28
+    BiCGStab time        = 6.22249 s.
+---------------------------------------------
